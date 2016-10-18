@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sg.com.bitwave.clearlink_animation.MainActivity"
+    android:gravity="center"
+    android:background="#2c3e50">
+
+    <!--<ImageView
+        android:id="@+id/iv_device_upgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/try_1" />
+
+    <ImageView
+        android:layout_below="@+id/iv_device_upgrade"
+        android:id="@+id/iv_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/device_upgrade_animation" />-->
+
+    <sg.com.bitwave.clearlink_animation.views.TestView
+        android:id="@+id/mv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcImage="@drawable/red_7"
+        />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_below="@id/mv_image"
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/creditcard" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non faucibus tellus. Suspendisse potenti. Maecenas maximus ut lacus vitae vestibulum. Integer ultrices arcu vel pulvinar luctus. Morbi mollis massa quis ipsum maximus posuere. Phasellus consequat dui ut neque fringilla, id mattis quam pellentesque. Maecenas vitae urna a nisi pulvinar tincidunt eu a purus. Curabitur vestibulum dapibus consequat. Donec id luctus ante. Vestibulum malesuada pulvinar arcu, in tempor est bibendum in. Proin a lorem vitae mauris imperdiet tempor eget pharetra augue. Suspendisse potenti. Suspendisse tristique mi in odio hendrerit, nec facilisis orci rutrum. Nulla nulla tellus, elementum sit amet lobortis nec, vestibulum et orci. Cras fringilla sem laoreet malesuada pulvinar. Nunc nibh dolor, faucibus non accumsan nec, volutpat nec eros." />
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</RelativeLayout>
